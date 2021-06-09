@@ -1,0 +1,18 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "plugin:node/recommended"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn", // pra nao ficar aparecendo warning quando tiver variavel criada mas nao usada
+    "no-console": "off", // pra nao ficar aparecendo warning quando colocar console.log
+    "func-names": "off",
+    "object-shorthand": "off",
+    "class-methods-use-this": "off"
+  }
+}
