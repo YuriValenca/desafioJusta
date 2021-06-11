@@ -1,24 +1,37 @@
-import { Component, OnInit } from '@angular/core';
+import { OnDestroy, Output } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { RequestService } from 'src/app/http/request.service';
+import { CommunicationService } from 'src/app/services/communication.service';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
-  srchopt: string = '';
+export class HeaderComponent implements OnInit, OnDestroy {
+  srchopt: string = 'name. Ex.: eevee';
+  namePoke: string = '';
+  peso: string = '';
+  searchInput: string = '';
 
-  searchInput: string = 'ditto';
+  message: string = '';
+  subscription: Subscription = new Subscription();
 
-  constructor(private requestService: RequestService) {}
+  constructor(private communication: CommunicationService) {}
 
   ngOnInit() {
-    this.searchPoke();
+    this.subscription = this.communication.currentMessage.subscribe(
+      (message) => (this.message = message)
+    );
   }
 
-  searchPoke() {
-    this.requestService.searchByName(this.searchInput);
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
+  }
+
+  sendConsulta() {
+    this.communication.sendConsulta(this.searchInput);
   }
 
   changePlaceholder(nome: string) {

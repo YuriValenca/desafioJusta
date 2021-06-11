@@ -9,14 +9,14 @@ export class RequestService {
   async searchByName(pokeName: string): Promise<pokeInfo> {
     let user: pokeInfo = new pokeInfo();
     try {
-      const data = await axios.get(
+      const { data } = await axios.get(
         `https://pokeapi.co/api/v2/pokemon/${pokeName}`
       );
-      console.log(data);
+      user = data as pokeInfo;
+      return user;
     } catch (error) {
-      console.log(error);
+      return new pokeInfo();
     }
-    return user;
   }
 
   constructor() {}

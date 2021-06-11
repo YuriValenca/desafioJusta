@@ -1,7 +1,9 @@
 @import '../app/components/footer/footer.component.scss';
 @import '../app/components/header/header.component.scss';
-
+@import '../app/components/pokemonDetails/pokemonDetails.component.scss';
 * {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }

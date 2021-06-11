@@ -4,6 +4,7 @@ import { gameIndex } from './gameIndex';
 import { heldItem } from './heldItem';
 import { sprites } from './sprites';
 import { stats } from './stats';
+import { Types } from './types';
 
 export class pokeInfo {
   abilities: abilities[] = [];
@@ -21,7 +22,7 @@ export class pokeInfo {
 
   species: adtInfo = new adtInfo();
   sprites: sprites = new sprites();
-  stats: stats = new stats();
-  types: gameIndex = new gameIndex();
+  stats: stats[] = [];
+  types: Types[] = [];
   weight: string = '';
 }
