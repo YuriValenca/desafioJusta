@@ -40,7 +40,6 @@ export class PokemonDetailsComponent implements OnInit, OnDestroy {
 
   async searchPoke(pokeName: string) {
     const response = await this.requestService.searchByName(pokeName);
-    console.log(response);
 
     this.pokeImg = response.sprites.other['official-artwork'].front_default;
     this.pokeName = response.name;

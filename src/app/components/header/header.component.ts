@@ -1,7 +1,6 @@
 import { OnDestroy, Output } from '@angular/core';
 import { Component, Input, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { RequestService } from 'src/app/http/request.service';
 import { CommunicationService } from 'src/app/services/communication.service';
 
 @Component({

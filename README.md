@@ -1,27 +1,75 @@
+![Pikachu waiving gif](https://pa1.narvii.com/5775/1834fee76b45a5c6efef3fc9ddc1fcaed286ecc4_hq.gif)
+
 # DesafioJusta
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.2.
+Projeto utilizado na parte prática da entrevista de estágio para desenvolvedor Front-End na JUSTA.
 
-## Development server
+## Índice
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- [Detalhes do projeto](#detalhes-do-projeto)
+- [Requisitos mandatórios](#requisitos-mandatórios)
+- [Instalando o projeto](#instalando-o-projeto)
+- [Iniciando o projeto](#iniciando-o-projeto)
+- [Lições aprendidas](#lições-aprendidas)
+- [Futuro do projeto](#futuro-do-projeto)
+- [Development](#development)
 
-## Code scaffolding
+## Detalhes do projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+[(Voltar ao topo)](#índice)
 
-## Build
+A API utilizada foi a [Pokeapi](https://pokeapi.co/), onde, com o site, é possível buscar informações variadas sobre os Pokémons a partir de seu nome ou número. As informações disponíveis são: imagem do Pokémon selecionado, nome e número de acordo com a Podédex, tipo(s), habilidade (normal e secreta), altura, peso e status base (Vida, Ataque, Defesa, Ataque Especial, Defesa Especial e Velocidade).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Requisitos mandatórios
 
-## Running unit tests
+[(Voltar ao topo)](#índice)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+[✓] Requisições HTTP obtendo dados de uma API;
 
-## Running end-to-end tests
+[✓] Uso de framework (Angular);
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+[✓] Uso de biblioteca de requisições (Axios);
 
-## Further help
+[✓] Uso de pré-processador (SCSS);
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[ ] Ser responsivo;
+
+[ ] Deploy da aplicação;
+
+[X] Testes unitários;
+
+[✓] Documentação do projeto.
+
+## Instalando o projeto
+
+[(Voltar ao topo)](#índice)
+
+Dentro da pasta do projeto, utilizar o Command Prompt (terminal) para instalar o Angular e iniciar o site:
+
+```cmd
+npm install -g @angular/cli
+```
+
+## Iniciando o projeto
+
+[(Voltar ao topo)](#índice)
+
+Com o Angular instalado, basta apenas digitar novamente no terminal o seguinte:
+
+```cmd
+ng serve --o
+```
+
+Este comando fará o site abrir automaticamente, a partir daí, é só usar e se divertir!
+
+## Lições aprendidas
+
+[(Voltar ao topo)](#índice)
+
+Aprender a lidar com prazos, escrever código limpo e legível, entender melhor Angular, fazer requisições e trabalhar o design do projeto foram apenas algumas das lições absorvidas durante esse projeto. Mesmo diante de algumas dificuldades, bugs e erros que não tinham a menor explicação, entrego este projeto com a certeza de que fiz meu melhor e, pricipalmente, que me diverti durante o processo!
+
+## Futuro do projeto
+
+[(Voltar ao topo)](#índice)
+
+Trabalhar com uma API divertida e de algo que eu tenho grande apego, me fez ter mais gosto e vontade de continuar trabalhando mais nesse projeto. Funcionalidades como busca por tipos, regiões e itens, além de busca de múltiplos itens e até randomização de resultados assim que o site for iniciado, utilizando carousel. Melhorias e pequenos "tweaks" na GUI são bem-vindos também.
