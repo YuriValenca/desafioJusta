@@ -62,13 +62,7 @@ npm install rxjs
 
 [(Voltar ao topo)](#índice)
 
-Primeiramente, com a mudança de nomenclatura da branch principal do GitHub de main para master, é necessário, antes de iniciar o projeto, digitar no terminal:
-
-```bash
-git checkout master
-```
-
-Na branch certa, e com o Angular, rxjs e Axios instalados, basta apenas digitar novamente no terminal o seguinte comando:
+Com o Angular, rxjs e Axios instalados, basta apenas digitar novamente no terminal o seguinte comando:
 
 ```cmd
 npm start
