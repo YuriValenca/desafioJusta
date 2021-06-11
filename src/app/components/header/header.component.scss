@@ -6,27 +6,45 @@
   font-family: 'flexoregular';
   src: url(../../../assets/fonts/Flexo-Regular/Flexo-Regular.ttf);
   font-style: normal;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .container {
-  height: 140px;
+  padding: 15px 0;
   background-color: #ffff33;
   display: flex;
+  align-items: center;
   min-width: 100%;
+}
+
+.logo-holder {
+  width: 20%;
+  display: flex;
+  justify-content: center;
 }
 
 .pkmn-logo {
   width: 200px;
   height: 110px;
-  margin: 15px 0 0 50px;
+  display: block;
+  margin: 0 auto 0 30px;
   float: left;
 }
 
 .search {
-  align-self: center;
-  margin-left: 120px;
-  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+
+::placeholder {
+  font: normal 16px/20px flexoregular;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
@@ -43,7 +61,7 @@ a {
   cursor: pointer;
 }
 
-a:hover {
+ul li a:hover {
   border-bottom: 3px solid #213067;
 }
 
@@ -58,6 +76,9 @@ a:hover {
 }
 
 .search-options {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
   align-self: center;
   max-height: 40px;
   padding-top: 5px;
@@ -76,4 +97,74 @@ a:hover {
 .search-btn img {
   height: auto;
   width: 36px;
+}
+
+@media (min-width: 480px) and (max-width: 790px) {
+  .pkmn-logo {
+    width: 100px;
+    height: 55px;
+    margin: 0 15px;
+  }
+
+  .container {
+    padding: 10px 0;
+  }
+
+  .search {
+    margin-left: 0;
+  }
+
+  .search-options li {
+    font: normal 14px/18px flexoregular;
+  }
+
+  ul li {
+    padding: 2px 5px;
+  }
+
+  .search-options ul {
+    padding: 0;
+  }
+
+  .search-options {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .search-bar {
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .pkmn-logo {
+    display: none;
+  }
+
+  .container {
+    max-width: 100%;
+    display: block;
+  }
+
+  .search-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-btn {
+    padding: 0;
+  }
+
+  .search {
+    width: 95%;
+    margin: 0 10px;
+    justify-content: flex-end;
+  }
+
+  .search-options {
+    justify-content: center;
+  }
 }

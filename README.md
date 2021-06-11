@@ -32,9 +32,9 @@ A API utilizada foi a [Pokeapi](https://pokeapi.co/), onde, com o site, é poss�
 
 [✓] Uso de pré-processador (SCSS);
 
-[ ] Ser responsivo;
+[✓] Ser responsivo;
 
-[ ] Deploy da aplicação;
+[X] Deploy da aplicação;
 
 [X] Testes unitários;
 
@@ -44,23 +44,37 @@ A API utilizada foi a [Pokeapi](https://pokeapi.co/), onde, com o site, é poss�
 
 [(Voltar ao topo)](#índice)
 
-Dentro da pasta do projeto, utilizar o Command Prompt (terminal) para instalar o Angular e iniciar o site:
+Dentro da pasta do projeto, utilizar o Command Prompt (terminal) para instalar o Angular:
 
 ```cmd
-npm install -g @angular/cli
+npm install @angular/cli
+```
+
+Em seguida, devemos instalar os pacotes npm utilizados no projeto:
+
+```cmd
+npm install axios
+
+npm install rxjs
 ```
 
 ## Iniciando o projeto
 
 [(Voltar ao topo)](#índice)
 
-Com o Angular instalado, basta apenas digitar novamente no terminal o seguinte:
+Primeiramente, com a mudança de nomenclatura da branch principal do GitHub de main para master, é necessário, antes de iniciar o projeto, digitar no terminal:
 
-```cmd
-ng serve --o
+```bash
+git checkout master
 ```
 
-Este comando fará o site abrir automaticamente, a partir daí, é só usar e se divertir!
+Na branch certa, e com o Angular, rxjs e Axios instalados, basta apenas digitar novamente no terminal o seguinte comando:
+
+```cmd
+npm start
+```
+
+A partir daí, é só usar e se divertir!
 
 ## Lições aprendidas
 

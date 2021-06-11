@@ -9,7 +9,7 @@ import { CommunicationService } from 'src/app/services/communication.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit, OnDestroy {
-  srchopt: string = 'name. Ex.: eevee';
+  srchopt: string = 'name';
   namePoke: string = '';
   peso: string = '';
   searchInput: string = '';

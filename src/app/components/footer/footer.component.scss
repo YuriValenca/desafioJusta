@@ -1,3 +1,23 @@
+p {
+  margin: 0 3px 0 0;
+  padding: 0;
+  display: flex;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url(../../../assets/fonts/Montserrat/Montserrat-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 app-footer {
   position: fixed;
   left: 0;
@@ -6,11 +26,34 @@ app-footer {
   background-color: #ef5350;
   text-align: center;
   color: white;
-  max-height: 4.5%;
+  height: unset;
+  font-family: montserrat;
 }
 
 .icons {
   width: 20px;
   height: 20px;
-  margin: 0 5px;
+  margin: 5px 5px;
+}
+
+@media (min-width: 480px) and (max-width: 790px) {
+  app-footer {
+    position: unset;
+  }
+
+  .footer {
+    background: #ef5350;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 479px) {
+  app-footer {
+    position: unset;
+  }
+
+  .footer {
+    background: #ef5350;
+    margin-top: 10px;
+  }
 }
