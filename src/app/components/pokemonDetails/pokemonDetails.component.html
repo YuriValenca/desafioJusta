@@ -1,0 +1,39 @@
+<div class="container">
+
+  <div class="holder">
+    <div class="pokeImg"><img src="{{pokeImg}}" alt="Pokemon Image" width="350" height="350"></div>
+    <div class="pokeInfo">
+      <h1>{{pokeName}}, #{{pokeNumber}}</h1>
+      <span *ngFor="let type of pokeTypes">{{type.type.name}} </span>
+      <div class="genInfo">
+        <p><strong>Height:</strong> {{numPokeHeight/10}}m | <strong>Weight:</strong> {{numPokeWeight/10}}kg</p>
+        <p><strong>Ability:</strong> {{pokeAbility[0].ability.name}} | <strong>Hidden:</strong>
+          {{pokeAbility[1].ability.name}}</p>
+        <table class="statsTable">
+          <tr>
+            <td>HP</td>
+            <td>{{pokeStats[0].base_stat}}</td>
+            <td>Attack</td>
+            <td>{{pokeStats[1].base_stat}}</td>
+          </tr>
+          <tr>
+            <td>Defense</td>
+            <td>{{pokeStats[2].base_stat}}</td>
+            <td>Sp. Atk</td>
+            <td>{{pokeStats[3].base_stat}}</td>
+          </tr>
+          <tr>
+            <td>Sp. Def</td>
+            <td>{{pokeStats[4].base_stat}}</td>
+            <td>Speed</td>
+            <td>{{pokeStats[5].base_stat}}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <div class="tableHolder">
+
+  </div>
+</div>
